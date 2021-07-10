@@ -1,0 +1,251 @@
+
+2021-06-25 22:17:05,310 INFO: errors [in app.py:520]
+2021-06-25 22:17:16,789 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:17:20,153 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:17:22,692 ERROR: Exception on /artists/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 423, in create_artist_form
+    form = ArtistForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:17:42,563 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:18:26,689 INFO: errors [in app.py:520]
+2021-06-25 22:18:35,675 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:19:33,357 INFO: errors [in app.py:520]
+2021-06-25 22:19:41,557 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:22:35,891 INFO: errors [in app.py:520]
+2021-06-25 22:22:43,649 ERROR: Exception on /venues/create [GET] [in /Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 230, in create_venue_form
+    form = VenueForm()
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/abeer/opt/anaconda3/lib/python3.8/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2021-06-25 22:23:43,000 INFO: errors [in app.py:521]
